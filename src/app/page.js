@@ -1,7 +1,7 @@
 import Link from 'next/link'; // <--- 1. NHỚ THÊM DÒNG NÀY
 
 export default async function PokemonPage() {
-  const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
+  const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=500');
   const data = await response.json();
   const pokemonList = data.results;
 
